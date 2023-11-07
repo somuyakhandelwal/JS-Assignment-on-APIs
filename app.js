@@ -6,7 +6,7 @@ function getData() {
 
   axios
     .get(
-      'https://gnews.io/api/v4/search?q=example&token=20272535ca1f753dbf1a5dae4438eca8&lang=en'
+      'https://gnews.io/api/v4/search?q=example&lang=en&max=6&apikey=24f0ee8494d9daf049f6881701f2c9f2'
     )
     .then((res) => {
       const listOfArticles = res.data.articles;
